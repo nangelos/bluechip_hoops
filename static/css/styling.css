@@ -1,15 +1,24 @@
 h1{
   align-content: center;
-  color: blue;
 }
 .jumbotron {
   margin-top: 5rem;
 }
 .jumbotron h1{
-  color: blue;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.jumbotron h2{
   text-align: center;
 }
 .container {
   margin: auto;
   text-align: center;
+}
+/*#info_h1{
+  padding-bottom: 20px;
+}*/
+#ball_pic{
+  opacity: 0.3;
+  position: relative;
 }
