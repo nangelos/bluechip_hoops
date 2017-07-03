@@ -2,3 +2,10 @@ h1{
   align-content: center;
   color: blue;
 }
+.jumbotron {
+  margin-top: 5rem;
+}
+.jumbotron h1{
+  color: blue;
+  text-align: center;
+}
