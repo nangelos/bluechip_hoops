@@ -1,14 +1,16 @@
 {% extends 'basic_app/base1.html'%}
 {% block body_block %}
-<div class="jumbotron">
-  <h1>Welcome to Blue Chip Hoops</h1>
+<div class="container bg-denim tall" style="margin-top: 10rem;">
+  <h1 class="heading ghost" style="margin-top: 5rem;">Welcome to Blue Chip Hoops</h1>
   <div class="container">
     <img src="http://katemcs.edublogs.org/files/2014/03/basketball-1jodx7c.png"
       alt="Can't Find Image" id="ball_pic">
-    <h2>Sign In</h2>
-    <input type="text" name="User Name" placeholder="Email Address">
-    <input type="password" name="Password" placeholder="Password">
-    <button type="button" name="login_btn">Sign In</button>
+    <h2 class="rich-black">Sign In</h2>
+    <form>
+      <input type="text" name="User Name" placeholder="Email Address">
+      <input type="password" name="Password" placeholder="Password">
+      <button type="button" name="login_btn" class="button button-primary ghost">Sign In</button>
+    </form>
   </div>
 
 </div>
