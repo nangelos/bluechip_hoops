@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^$', views.index, name = 'index'),
     url(r'^basic_app/',include('basic_app.urls')),
     url(r'^info/', views.info, name = 'info'),
-    url(r'^signup/', views.signup, name = 'signup'),
+    url(r'^signup/', views.register, name = 'signup'),
+    url(r'^news/', views.news, name = 'news'),
 ]

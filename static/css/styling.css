@@ -28,6 +28,7 @@ h2 {
 }
 .jumbotron h2{
   text-align: center;
+  /*margin-bottom: 200px;*/
 }
 .container {
   margin: auto;
@@ -147,4 +148,19 @@ and (max-device-width : 667px) {
 }
 .bg-ghost {
   background-color: #F9FAFF !important;
+}
+
+/*ID Specific*/
+#left_panel{
+  float: left;
+  width: 25%;
+  /*margin: 5px;*/
+}
+#mid_panel{
+  width: 60%;
+}
+#right_panel{
+  float: right;
+  width: 25%;
+  /*margin: 5px;*/
 }
