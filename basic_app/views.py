@@ -7,6 +7,9 @@ def index(request):
 def info(request):
     return render(request,'basic_app/info.html')
 
+def signup(request):
+    return render(request,'basic_app/signup.html')
+
 def user_login(request):
 
     if request.method == 'POST':

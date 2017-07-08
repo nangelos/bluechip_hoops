@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name = 'index'),
     url(r'^basic_app/',include('basic_app.urls')),
-    url(r'^info/', views.info, name = 'info')
+    url(r'^info/', views.info, name = 'info'),
+    url(r'^signup/', views.signup, name = 'signup'),
 ]
