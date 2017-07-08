@@ -1,15 +1,31 @@
 {% extends "basic_app/base1.html" %}
 {% block body_block %}
-<div class="container">
+<!-- <div class="container bg-ghost tall" style="margin-top: 10rem">
   <div class="jumbotron">
-    <h2>Sign Up</h2>
+    <h1>Sign Up</h1>
+
     <input type="text" name="username" placeholder="Email Address">
     <p></p>
-    <input type="password" name="user_password" placeholder="Password">
+    <input type="password" name="user_pwd" placeholder="Password">
     <p></p>
     <input type="submit" name="Sign In" value="Submit">
 
   </div>
-</div>
+</div> -->
 
+<div class="jumbotron">
+  {% if registered %}
+  <h1>Thank your for registering!</h1>
+  {% else %}
+  <h1>Register Here!</h1>
+  <h3>Fill out the form:</h3>
+
+  <form enctype="multipart/form-data" method="POST">
+    {% csrf_token %}
+    {{ user_form.as_p }}
+    {{ profile_form.as_p }}
+    <input type="submit" name="" value="Register">
+  </form>
+{% endif %}
+</div>
 {% endblock %}
