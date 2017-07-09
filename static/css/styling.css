@@ -163,3 +163,6 @@ table {
   margin-top: 3rem;
   text-align: left;
 }
+.button_group {
+  padding: 10px;
+}
