@@ -1,9 +1,15 @@
 {% extends "basic_app/base1.html" %}
 {% block body_block %}
-<!-- <div class="container bg-ghost tall" style="margin-top: 10rem">
+<div class="container bg-ghost tall" style="margin-top: 10rem">
   <div class="jumbotron">
     <h1>Sign Up</h1>
 
+    <input type="text" name="first_name" placeholder="First Name">
+    <p></p>
+    <input type="text" name="last_name" placeholder="Last Name">
+    <p></p>
+    <input type="text" name="university" placeholder="School">
+    <p></p>
     <input type="text" name="username" placeholder="Email Address">
     <p></p>
     <input type="password" name="user_pwd" placeholder="Password">
@@ -11,9 +17,9 @@
     <input type="submit" name="Sign In" value="Submit">
 
   </div>
-</div> -->
+</div>
 
-<div class="jumbotron">
+<!-- <div class="jumbotron">
   {% if registered %}
   <h1>Thank your for registering!</h1>
   {% else %}
@@ -27,5 +33,5 @@
     <input type="submit" name="" value="Register">
   </form>
 {% endif %}
-</div>
+</div> -->
 {% endblock %}

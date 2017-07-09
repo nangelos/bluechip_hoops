@@ -156,11 +156,22 @@ and (max-device-width : 667px) {
   width: 25%;
   /*margin: 5px;*/
 }
-#mid_panel{
-  width: 60%;
+.container bg-ghost tall #mid_panel{
+  /*width: 70%;*/
+  float: right;
+  border: 5px, black, solid;
 }
 #right_panel{
   float: right;
   width: 25%;
   /*margin: 5px;*/
+}
+
+table td th{
+  border: 5px solid black;
+  align-items: center;
+}
+
+#my_table{
+  border: 5px solid black;
 }

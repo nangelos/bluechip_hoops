@@ -20,6 +20,21 @@ def register(request):
 def news(request):
     return render(request, 'basic_app/news.html')
 
+def natl_rank(request):
+    return render(request, 'basic_app/natl_ranks.html')
+
+def my_recruits(request):
+    return render(request, "basic_app/my_recruits.html")
+
+def upcoming(request):
+    return render(request, "basic_app/upcoming.html")
+
+def manage_staff(request):
+    return render(request, "basic_app/staff.html")
+
+def manage_social(request):
+    return render(request, "basic_app/social.html")
+
 # def user_logout(request):
 #     # Log out the user.
 #     logout(request)
