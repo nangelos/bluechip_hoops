@@ -1,14 +1,18 @@
 {% extends 'basic_app/base1.html'%}
 {% block body_block %}
-<div class="container bg-denim tall" style="margin-top: 10rem;">
+<div class="container bg-denim tall" style="margin-top: 10rem; height: 650px;">
   <h1 class="heading ghost" style="margin-top: 5rem;">Welcome to Blue Chip Hoops</h1>
   <div class="container" style="position: absolute;">
       <div class="login-banner" style="margin-top: 5rem;"></div>
-    <form class="center form-primary" style="margin: auto; width: 53%; height: 10rem; position: relative; margin-top: -16rem;">
-      <h2 class="rich-black" style="padding-top: 12px;">Sign In</h2>
+    <form class="center form-primary" style="margin: auto; width: 53%; height: 10rem; position: relative; margin-top: -23rem;">
+      <h2 class="ghost" style="padding-top: 12px;">Sign In</h2>
 
-      <input class="bg-ghost" type="text" name="User Name" placeholder="Email Address">
-      <input class="bg-ghost" type="password" name="Password" placeholder="Password">
+      <p>
+        <input class="bg-ghost" type="text" name="User Name" placeholder="Email Address">
+      </p>
+      <p>
+        <input class="bg-ghost" type="password" name="Password" placeholder="Password">
+      </p>
       <button type="button" name="login_btn" class="button button-primary ghost">Sign In</button>
 
     </form>
