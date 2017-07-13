@@ -3,17 +3,25 @@
 <div class="container bg-ghost tall" style="margin-top: 10rem">
     <h1>Sign Up</h1>
 
-    <input type="text" name="first_name" placeholder="First Name">
+    <!-- <input type="text" name="first_name" placeholder="First Name">
     <p></p>
     <input type="text" name="last_name" placeholder="Last Name">
-    <p></p>
-    <input type="text" name="university" placeholder="School">
     <p></p>
     <input type="text" name="username" placeholder="Email Address">
     <p></p>
     <input type="password" name="user_pwd" placeholder="Password">
     <p></p>
-    <input class="button button-primary ghost" type="submit" name="Sign In" value="Submit" style="margin-bottom: 15px;">
+    <input class="button button-primary ghost" type="submit" name="Sign In" value="Submit" style="margin-bottom: 15px;"> -->
+    {% if registered %}
+    <h1 class="heading denim">Thank you for registering</h1>
+    {% else %}
+    <form method=" POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ user_form.as_p }}
+      {{ profile_form.as_p }}
+      <input class="button button-primary ghost" type="submit" name="" value="Signup">
+    </form>
+    {% endif %}
 
 </div>
 

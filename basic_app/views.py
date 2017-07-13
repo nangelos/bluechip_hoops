@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from basic_app.forms import UserForm,UserProfileInfoForm
+from basic_app.forms import UserForm, UserProfileInfo
 
 # Extra Imports for the Login and Logout Capabilities
 from django.contrib.auth import authenticate, login, logout
@@ -15,7 +15,45 @@ def info(request):
     return render(request, 'basic_app/info.html')
 
 def register(request):
-    return render(request, 'basic_app/signup.html')
+    # registered = False
+    # if request.method == "POST":
+    #     user_form = UserForm(data = request.POST)
+    #     if user_form.is_valid():
+    #         user = user_form.save()
+    #         create = User.objects.create()
+    #         create.email = user.email
+    #         create.password = user.password
+    #         create.username = user.email
+    #         create.save()
+    #         # user.set_password(user.password)
+    #         # user.save()
+    #         registered = True
+    # else:
+    #     user_form = UserForm()
+    #     profile_form = UserProfileInfo()
+    # return render(request, 'basic_app/signup.html', {'user_form':user_form, 'registered':registered, 'profile_form':profile_form})
+
+    registered=False
+    if request.method =='POST':
+        user_form =UserForm(data=request.POST)
+        profile_form=UserProfileInfo(data=request.POST)
+        if user_form.is_valid() and profile_form.is_valid():
+            user=user_form.save()
+            user.set_password(user.password)
+            user.save()
+            profile=profile_form.save(commit=False)
+            profile.user=user
+            profile.save()
+            registered=True
+        else:
+            print(user_form.errors,profile_form.errors)
+    else:
+        user_form=UserForm()
+        profile_form=UserProfileInfo()
+
+    return render(request,'basic_app/signup.html',
+            {'user_form':user_form,'profile_form':profile_form,
+            'registered':registered})
 
 def news(request):
     return render(request, 'basic_app/news.html')
