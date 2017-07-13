@@ -13,14 +13,14 @@
     <p></p>
     <input class="button button-primary ghost" type="submit" name="Sign In" value="Submit" style="margin-bottom: 15px;"> -->
     {% if registered %}
-    <h1 class="heading denim">Thank you for registering</h1>
+      <h1 class="heading denim">Thank you for registering</h1>
     {% else %}
-    <form method=" POST" enctype="multipart/form-data">
-      {% csrf_token %}
-      {{ user_form.as_p }}
-      {{ profile_form.as_p }}
-      <input class="button button-primary ghost" type="submit" name="" value="Signup">
-    </form>
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ user_form.as_p }}
+        {{ profile_form.as_p }}
+        <input class="button button-primary ghost" type="submit" value="Signup">
+      </form>
     {% endif %}
 
 </div>
