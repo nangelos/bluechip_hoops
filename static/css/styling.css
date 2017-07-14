@@ -62,11 +62,11 @@ a {
 }
 .button-danger {
   font-size: 18px;
-  color: #cc0017;
-  border: none;
   border-radius: 3px 3px 3px;
   height: 30px;
   margin: auto;
+  background-color: #cc0017;
+  border: none;
 }
 .button:hover {
   opacity: 0.8;
@@ -83,6 +83,7 @@ input:focus{
   text-transform: none;
   margin: auto;
   width: 80%;
+  padding-bottom: 15px;
 }
 
 .bg-overlay {
@@ -96,18 +97,9 @@ input:focus{
   left: 22.2vw;
   border-radius: 5px 5px 5px;
 }
-/*#info_h1{
-  padding-bottom: 20px;
-}*/
-#ball_pic{
-  opacity: 0.9;
-  border-radius: 5px 5px 5px;
-  width: 500px;
-  height: 500px;
-  margin: auto;
-}
 .login-banner {
-  width: 500px;
+  max-width: 500px;
+  min-width: 300px;
   height: 300px;
   background-image: linear-gradient(rgba(50,58,71,.65),rgba(50,58,71,.65)),url("../media/bluechip.jpg");
   margin: auto;
@@ -146,12 +138,13 @@ input:focus{
 .bg-ghost {
   background-color: #F9FAFF !important;
 }
-
+.delete {
+  cursor: pointer;
+}
 /*ID Specific*/
 .left_panel {
   float: left;
   width: 25%;
-  /*margin: 5px;*/
 }
 .mid_panel {
   width: 50%;
@@ -160,7 +153,6 @@ input:focus{
 .right_panel {
   float: right;
   width: 25%;
-  /*margin: 5px;*/
 }
 table {
   margin-top: 3rem;
