@@ -1,8 +1,8 @@
 {% extends "basic_app/base.html" %}
 {% block body_block %}
-<div class="container bg-ghost tall"style="margin-top: 10rem;">
-
+<div class="container bg-ghost tall"style="margin-top: 10rem; width: 95%;">
   <h1>Manage Staff</h1>
+  <div style="overflow-x: auto;">
   <table class="bg-ghost table striped">
     <thead>
       <th>First Name</th>
@@ -22,6 +22,7 @@
       <td><span data-toggle="tooltip" data-placement="top" title="Remove user." class="delete glyphicon glyphicon-trash" id="delete_user"></span></td>
     </tr>
   </table>
+</div>
 <div class="button_group">
   <input class="button button-primary ghost" type="button" name="add_user_btn" value="Add User">
 </div>
