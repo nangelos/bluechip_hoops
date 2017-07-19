@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from basic_app.forms import UserForm, UserProfileInfo
+from basic_app.forms import UserForm, UserProfileInfo, RecruitProfileInfoForm
 
 # Extra Imports for the Login and Logout Capabilities
 from django.contrib.auth import authenticate, login, logout

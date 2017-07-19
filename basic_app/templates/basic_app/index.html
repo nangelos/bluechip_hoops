@@ -6,13 +6,18 @@
     <form class="center form-primary" style="margin: auto; width: 53%; height: 10rem; position: relative; margin-top: -23rem;">
       <h2 class="ghost" style="padding-top: 12px;">Sign In</h2>
 
-      <p>
-        <input class="bg-ghost" type="text" name="User Name" placeholder="Email Address">
-      </p>
-      <p>
-        <input class="bg-ghost" type="password" name="Password" placeholder="Password">
-      </p>
-      <button type="button" name="login_btn" class="button button-primary ghost">Sign In</button>
+      <form action="{% url 'index' %}" method="POST">
+        {% csrf_token %}
+
+        <p>
+          <input class="bg-ghost" type="text" name="User Name" placeholder="Email Address">
+        </p>
+        <p>
+          <input class="bg-ghost" type="password" name="Password" placeholder="Password">
+        </p>
+        <button type="button" name="login_btn" class="button button-primary ghost">Sign In</button>
+
+      </form>
 
     </form>
 
