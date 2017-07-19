@@ -21,6 +21,7 @@ class UserProfileInfo(models.Model):
         return self.user.username
 
 class RecruitProfileInfo(models.Model):
+    player_grad_year = models.IntegerField()
     player_first_name = models.CharField(max_length = 40)
     player_last_name = models.CharField(max_length = 40)
     player_position = models.CharField(max_length = 5)
@@ -34,3 +35,17 @@ class RecruitProfileInfo(models.Model):
 
     def __str__(self):
         return self.user.username
+
+class NationalRecruitList(models.Model):
+    
+    player_grad_year = models.IntegerField()
+    player_rivals_rank = models.IntegerField()
+    player_espn_rank = models.IntegerField()
+    player_first_name = models.CharField(max_length = 40)
+    player_last_name = models.CharField(max_length = 40)
+    player_position = models.CharField(max_length = 5)
+    player_school = models.CharField(max_length = 40)
+    player_state = models.CharField(max_length = 2)
+    player_height = models.CharField(max_length = 5)
+    player_weight = models.IntegerField()
+    player_potential_schools = models.CharField(max_length = 260)
