@@ -32,11 +32,12 @@
       </div>
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li><a href="{% url 'index' %}">Home</a></li>
-            <li><a href="{% url 'info' %}">Info</a></li>
+            <li><a href="{% url 'basic_app:index' %}">Home</a></li>
+            <li><a href="{% url 'basic_app:info' %}">Info</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="blue" href="{% url 'signup' %}">Sign Up</a></li>
+            <li><a class="blue" href="{% url 'basic_app:signup' %}">Sign Up</a></li>
+            <li><a class="denim" href="{% url 'basic_app:login' %}">Sign In</a></li>
           </ul>
         </div>
       </div>

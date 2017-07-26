@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
-from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
 # class UserProfileInfo(models.Model):
@@ -37,7 +36,7 @@ class RecruitProfileInfo(models.Model):
         return self.user.username
 
 class NationalRecruitList(models.Model):
-    
+
     player_grad_year = models.IntegerField()
     player_rivals_rank = models.IntegerField()
     player_espn_rank = models.IntegerField()

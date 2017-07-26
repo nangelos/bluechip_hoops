@@ -6,7 +6,7 @@
     <form class="center form-primary" style="margin: auto; width: 53%; height: 10rem; position: relative; margin-top: -23rem;">
       <h2 class="ghost" style="padding-top: 12px;">Sign In</h2>
 
-      <form action="{% url 'index' %}" method="POST">
+      <form action="{% url 'basic_app:index' %}" method="POST">
         {% csrf_token %}
 
         <p>
