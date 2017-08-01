@@ -73,11 +73,10 @@ def manage_staff(request):
 def manage_social(request):
     return render(request, "basic_app/social.html")
 
-# def user_logout(request):
-#     # Log out the user.
-#     logout(request)
-#     # Return to homepage.
-#     return HttpResponseRedirect(reverse('index'))
+@login_required
+def user_logout(request):
+	logout(request)
+	return HttpResponseRedirect(reverse('home_page:index'))
 
 # def register(request):
 #
