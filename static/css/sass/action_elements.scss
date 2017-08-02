@@ -1,0 +1,48 @@
+
+h1{
+  align-content: center;
+}
+h2 {
+  font-size: 25px;
+}
+a {
+  color: #263DA5;
+}
+
+.button-primary {
+  font-size: 18px;
+  background-color: #4967ED;
+  border: none;
+  border-radius: 3px 3px 3px;
+  height: 30px;
+  margin: auto;
+  padding: 2px 6px 6px 6px;
+}
+.button-danger {
+  font-size: 18px;
+  border-radius: 3px 3px 3px;
+  height: 30px;
+  margin: auto;
+  background-color: #cc0017;
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  /*line-height: 16px;
+  font-size: 16px;*/
+}
+
+/*Colors*/
+.delete {
+  cursor: pointer;
+}
+/*ID Specific*/
+
+.button_group {
+  padding: 10px;
+}

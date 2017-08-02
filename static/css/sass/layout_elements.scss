@@ -3,18 +3,6 @@ body {
   font-family: "Lucida Grande", sans-serif;
   text-transform: uppercase;
 }
-body:focus {
-  outline: none;
-}
-h1{
-  align-content: center;
-}
-h2 {
-  font-size: 25px;
-}
-a {
-  color: #263DA5;
-}
 .navbar {
   box-shadow: 0px 2px 7px #5b5b5b;
 }
@@ -58,33 +46,6 @@ a {
   width: auto;
   height: auto;
 }
-.button-primary {
-  font-size: 18px;
-  background-color: #4967ED;
-  border: none;
-  border-radius: 3px 3px 3px;
-  height: 30px;
-  margin: auto;
-  padding: 2px 6px 6px 6px;
-}
-.button-danger {
-  font-size: 18px;
-  border-radius: 3px 3px 3px;
-  height: 30px;
-  margin: auto;
-  background-color: #cc0017;
-  border: none;
-}
-button:focus {
-  outline: none;
-}
-button:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  /*line-height: 16px;
-  font-size: 16px;*/
-}
 input:focus{
   box-shadow: 0px 0px 8px 2px #1E47FF;
   border-radius: 2px 2px 2px;
@@ -115,47 +76,10 @@ input:focus{
   max-width: 500px;
   min-width: 300px;
   height: 300px;
-  background-image: linear-gradient(rgba(50,58,71,.65),rgba(50,58,71,.65)),url("../media/bluechip.jpg");
+  background-image: linear-gradient(rgba(50,58,71,.65),rgba(50,58,71,.65)),url("../../media/bluechip.jpg");
   margin: auto;
   border-radius: 5px 5px 5px;
 }
-/*Colors*/
-.rich-black {
-  color: #01030C !important;
-}
-.ultra-blue {
-  color: #4967ED !important;
-}
-.denim {
-  color: #263DA5 !important;
-}
-.blue {
-  color: #1E47FF !important;
-}
-.ghost {
-  color: #F9FAFF !important;
-}
-
-/*Backgrounds*/
-.bg-rich-black {
-  background-color: #01030C !important;
-}
-.bg-ultra-blue {
-  background-color: #4967ED !important;
-}
-.bg-denim {
-  background-color: #263DA5 !important;
-}
-.bg-blue {
-  background-color: #1E47FF !important;
-}
-.bg-ghost {
-  background-color: #F9FAFF !important;
-}
-.delete {
-  cursor: pointer;
-}
-/*ID Specific*/
 .left_panel {
   float: left;
   width: 25%;
@@ -174,9 +98,6 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-}
-.button_group {
-  padding: 10px;
 }
 @media (max-width: 991px) {
     .navbar-header {
