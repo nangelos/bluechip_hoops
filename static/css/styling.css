@@ -3,6 +3,9 @@ body {
   font-family: "Lucida Grande", sans-serif;
   text-transform: uppercase;
 }
+body:focus {
+  outline: none;
+}
 h1{
   align-content: center;
 }
@@ -72,8 +75,15 @@ a {
   background-color: #cc0017;
   border: none;
 }
-.button:hover {
-  opacity: 0.8;
+button:focus {
+  outline: none;
+}
+button:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  /*line-height: 16px;
+  font-size: 16px;*/
 }
 input:focus{
   box-shadow: 0px 0px 8px 2px #1E47FF;
