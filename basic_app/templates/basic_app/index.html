@@ -1,8 +1,10 @@
 {% extends 'basic_app/base1.html'%}
 {% block body_block %}
+<!-- {% load render_bundle from webpack_loader %} -->
 <div class="container bg-denim tall" style="margin-top: 10rem; height: 650px; min-width: 400px; margin-bottom: 3rem;">
   <h1 class="heading ghost" style="margin-top: 5rem;">Welcome to Blue Chip Hoops</h1>
       <div class="login-banner" style="margin-top: 5rem;"></div>
+      <div id="reactapp"></div>
     <form class="center form-primary" style="margin: auto; width: 53%; height: 10rem; position: relative; margin-top: -23rem;">
       <h2 class="ghost" style="padding-top: 12px;">Sign In</h2>
 
@@ -21,6 +23,7 @@
 
     </form>
 
+<!-- {% render_bundle 'main' %} -->
 </div>
 
 {% endblock %}

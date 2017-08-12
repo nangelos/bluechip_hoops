@@ -16,6 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR = os.path.join(BASE_DIR,'static')
+REACT_DIR = os.path.join(BASE_DIR,'assets')
 # MEDIA_DIR = os.path.join(BASE_DIR,'media')
 
 # Quick-start development settings - unsuitable for production
@@ -29,7 +30,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+# WEBPACK config
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME':'bundles/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+    }
+}
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'basic_app',
+    'webpack_loader',
 ]
 
 MIDDLEWARE = [
@@ -149,7 +157,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
 
-      STATIC_DIR
+      STATIC_DIR, REACT_DIR
 ]
 
 #MEDIA
